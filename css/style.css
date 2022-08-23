@@ -57,12 +57,30 @@
 .navigation__link {
   text-decoration: none;
   color: #533738;
+  box-sizing: border-box;
+}
+
+.navigation__link:hover {
+  border-bottom: 1px solid #533738;
+}
+
+.navigation__link:active {
+  opacity: 0.6;
+}
+
+.navigation__link:focus {
+  outline: 1px solid #533738;
 }
 
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.logo:hover {
+  border: none;
+  opacity: 0.6;
 }
 
 .page-main {
@@ -105,6 +123,11 @@
   width: fit-content;
   min-width: 175px;
   text-align: center;
+}
+
+.inner-header__link:hover,
+.inner-header__link:focus {
+  opacity: 0.8;
 }
 
 .about-company {
@@ -265,6 +288,11 @@
   position: relative;
   transform: translateX(-20px);
   cursor: pointer;
+}
+
+.portfolio__button:hover,
+.portfolio__button:active {
+  opacity: 0.6;
 }
 
 .portfolio__button::before {
@@ -435,6 +463,11 @@
   cursor: pointer;
 }
 
+.reviews__buttons button:hover,
+.reviews__buttons button:active {
+  opacity: 0.8;
+}
+
 .reviews__prev {
   margin-left: 182px;
 }
@@ -542,6 +575,12 @@
   min-height: 74px;
   box-sizing: border-box;
   padding: 24px 65px;
+  cursor: pointer;
+}
+
+.submit-application__button:hover,
+.submit-application__button:active {
+  opacity: 0.8;
 }
 
 .submit-application__map {
